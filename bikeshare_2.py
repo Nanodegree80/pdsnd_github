@@ -2,7 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
-CITY_DATA = { 'chicago': 'chicago.csv',
+CITY_DATA_CSV = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
@@ -29,7 +29,7 @@ def get_filters():
     return city, month, day
 
 
-def load_data(city, month, day):
+def loading_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
 
@@ -128,7 +128,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input('\nWould you like to restart? Please enter yes or no.\n')
         if restart.lower() != 'yes':
             break
 
