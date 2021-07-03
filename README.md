@@ -4,7 +4,7 @@
 2021-06-23
 
 ### Project Title
-Explore US Bikeshare Data with Python
+Explore US Bikeshare Data
 
 ### Description
 Importing US bike share data and answering interesting questions about it by computing descriptive statistics using Python.
